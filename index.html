@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Sayoojya Santhosh</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Sayoojya Santhosh</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container"> 
-            <a href="index.html" class="logo">Sayoojya Santhosh</a> 
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="interests.html">Interests</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-            </nav>
+<div class="outer-container">
+
+  <header role="banner"> 
+    <div class="header-container">
+      <div class="container">
+        <a href="index.html" class="logo" aria-label="Homepage">Sayoojya Santhosh</a>
+        <nav aria-label="Main Navigation"> 
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li> 
+            <li><a href="about.html">About</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main"> 
+    <section id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h2>Welcome to My Portfolio</h2>
+          <p>I am a BSc Computer Science student specializing in Artificial Intelligence. Passionate
+            about web development and innovative technology, I enjoy creating efficient and
+            user-friendly applications.</p>
         </div>
-    </header>
+        <img src="hero_image.jpg" alt="Hero Image">
+      </div>
+    </section>
+  </main>
 
-    <main id="main-content">
-        <section id="hero"> 
-            <div class="container">
-                <div class="hero-content">
-                    <h2>Welcome to My Portfolio</h2>
-                    <p>I am a BSc Computer Science student specializing in Artificial Intelligence. Passionate about web development and innovative technology, I enjoy creating efficient and user-friendly applications.</p>
-                </div>
-                <img src="hero_image.jpg" alt="Hero Image"> 
-            </div>
-        </section>
+  <footer role="contentinfo"> 
+    <div class="container">
+      <p>&copy; Sayoojya Santhosh - 2024</p>
+    </div>
+  </footer>
 
-        </main>
+</div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; Sayoojya Santhosh - 2024</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
